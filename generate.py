@@ -14,7 +14,7 @@ def get_wg():
   return wg
 
 def getargs():
-  parser = argparse.ArgumentParser(description='Generate wireguard client config                                                                                                                                                             .')
+  parser = argparse.ArgumentParser(description='Generate wireguard client config.')
   parser.add_argument('client')
   parser.add_argument('ip')
   args = parser.parse_args()
