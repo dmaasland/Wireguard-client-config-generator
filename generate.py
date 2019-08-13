@@ -56,13 +56,13 @@ def generate_config(privatekey, preshared, ip):
   template = Template("""[Interface]
 Address = {{ ip }}/24
 PrivateKey = {{ privatekey }}
-DNS = 192.168.1.1
+DNS = 1.1.1.1
 
 [Peer]
 PublicKey = {{ publickey }}
 {% if preshared %}PresharedKey = {{ preshared }}{% endif %}
 AllowedIPs = 0.0.0.0/0, ::/0
-Endpoint = slurpgeit.nl:51337
+Endpoint = 1.2.3.4:1234
 
 """)
 
